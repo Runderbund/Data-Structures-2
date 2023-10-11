@@ -44,6 +44,16 @@ class RunMain:
         result = self.tree.in_order_traversal()
         print("In-order traversal:", result)
 
+    def traverse_tree_pre_order(self):
+        print("\nPerforming pre-order tree traversal:")
+        result = self.tree.pre_order_traversal()
+        print("Pre-order traversal:", result)
+
+    def traverse_tree_post_order(self):
+        print("\nPerforming post-order tree traversal:")
+        result = self.tree.post_order_traversal()
+        print("Post-order traversal:", result)
+
 if __name__ == '__main__':
     main = RunMain()
     main.append_nodes()
@@ -51,3 +61,5 @@ if __name__ == '__main__':
     main.populate_tree()
     main.search_tree()
     main.traverse_tree_in_order()
+    main.traverse_tree_pre_order()
+    main.traverse_tree_post_order()
