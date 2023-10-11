@@ -18,6 +18,7 @@ class RunMain:
         print("\nSearch for a node with the value of 22")
         print(self.list.find_node(22))
 
+
 if __name__== '__main__':
     main = RunMain()
     main.append_nodes ()
