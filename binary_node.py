@@ -15,6 +15,12 @@ class BinaryNode:
                 self.right = BinaryNode(data)
             else:
                 self.right.insert_node(data)
-                
-    def search_for_node():
-        pass
+
+    def search_for_node(self, data):
+        if self.data == data:
+            return self
+        elif data < self.data and self.left is not None:
+            return self.left.search_for_node(data)
+        elif data > self.data and self.right is not None:
+            return self.right.search_for_node(data)
+        return None
