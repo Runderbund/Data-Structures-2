@@ -38,9 +38,16 @@ class RunMain:
         result = self.tree.search_for_node(100)
         print(f"Node found: {result.data if result else None}")
 
-if __name__== '__main__':
+
+    def traverse_tree_in_order(self):
+        print("\nPerforming in-order tree traversal:")
+        result = self.tree.in_order_traversal()
+        print("In-order traversal:", result)
+
+if __name__ == '__main__':
     main = RunMain()
     main.append_nodes()
     main.find_values()
     main.populate_tree()
     main.search_tree()
+    main.traverse_tree_in_order()
