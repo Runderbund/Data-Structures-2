@@ -72,3 +72,13 @@ class BinarySearchTree:
         if self.root is None:
             return []
         return self.root.in_order_traversal()
+    
+    def pre_order_traversal(self):
+        if self.root is None:
+            return []
+        return self.root.pre_order_traversal()
+
+    def post_order_traversal(self):
+        if self.root is None:
+            return []
+        return self.root.post_order_traversal()
