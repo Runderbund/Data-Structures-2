@@ -33,6 +33,24 @@ class BinaryNode:
         if self.right is not None:
             output.extend(self.right.in_order_traversal())
         return output
+    
+    def pre_order_traversal(self):
+        output = []
+        output.append(self.data)
+        if self.left is not None:
+            output.extend(self.left.pre_order_traversal())
+        if self.right is not None:
+            output.extend(self.right.pre_order_traversal())
+        return output
+
+    def post_order_traversal(self):
+        output = []
+        if self.left is not None:
+            output.extend(self.left.post_order_traversal())
+        if self.right is not None:
+            output.extend(self.right.post_order_traversal())
+        output.append(self.data)
+        return output
 
 class BinarySearchTree:
     def __init__(self):
