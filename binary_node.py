@@ -50,4 +50,7 @@ class BinarySearchTree:
         else:
             return self.root.search_for_node(data)
 
-    
+    def in_order_traversal(self):
+        if self.root is None:
+            return []
+        return self.root.in_order_traversal()
