@@ -24,6 +24,15 @@ class BinaryNode:
         elif data > self.data and self.right is not None:
             return self.right.search_for_node(data)
         return None
+    
+    def in_order_traversal(self):
+        output = []
+        if self.left is not None:
+            output.extend(self.left.in_order_traversal())
+        output.append(self.data)
+        if self.right is not None:
+            output.extend(self.right.in_order_traversal())
+        return output
 
 class BinarySearchTree:
     def __init__(self):
@@ -40,3 +49,5 @@ class BinarySearchTree:
             return None
         else:
             return self.root.search_for_node(data)
+
+    

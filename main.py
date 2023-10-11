@@ -6,7 +6,6 @@ class RunMain:
         self.list = LinkedList()
         self.tree = BinarySearchTree()
 
-
     def append_nodes(self):
         print("\nAdd a new node with the value of 5")
         self.list.append_node(5)
