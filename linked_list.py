@@ -24,3 +24,10 @@ class LinkedList:
                 return True
             current_node = current_node.next
         return False
+
+class BinaryNode:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
